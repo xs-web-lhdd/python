@@ -2,9 +2,13 @@
   <dictionary name="LiuHao">
     <words>
       <w>batchsize</w>
+      <w>cifar</w>
+      <w>gbase</w>
       <w>histc</w>
+      <w>imgs</w>
       <w>pred</w>
       <w>randn</w>
+      <w>vggnet</w>
     </words>
   </dictionary>
 </component>
