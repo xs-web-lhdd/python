@@ -1,9 +1,10 @@
 import torch
 import torch.nn as nn
 import torchvision
-from vggnet import VGGNet
-# from resnet import resNet
-# from mobilenetv1 import mobilenet
+from vggnet import VGGNet, net_name
+# from resnet import resNet, net_name
+# from mobilenetv1 import mobilenet, net_name
+# from inceptionMolule import InceptionNetSmall, net_name
 from load_cifar10 import train_data_loader, test_data_loader
 import os
 from torch.utils.tensorboard import SummaryWriter
@@ -17,6 +18,7 @@ batch_size = 128
 
 # net = resNet().to(device)
 # net = mobilenet().to(device)
+# net = InceptionNetSmall().to(device)
 net = VGGNet().to(device)
 
 # loss
@@ -97,9 +99,9 @@ for epoch in range(epoch_num):
     print('test epoch is ', epoch, 'loss is: ', test_loss, 'test correct is: ', test_correct)
 
     # 模型存储:
-    if not os.path.exists('models'):
-        os.mkdir('models')
-    torch.save(net.state_dict(), 'models/{}.pth'.format(epoch + 1))
+    if not os.path.exists('models/{}'.format(net_name)):
+        os.mkdir('models/{}'.format(net_name))
+    torch.save(net.state_dict(), 'models/{}/{}.pth'.format(net_name, epoch + 1))
     # 在每个 epoch 之后对学习率进行更新
     scheduler.step()
     print('lr is', optimizer.state_dict()['param_groups'][0]['lr'])

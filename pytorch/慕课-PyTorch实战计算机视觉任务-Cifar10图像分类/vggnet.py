@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+net_name = 'vggnet'
+
 
 class VGGbase(nn.Module):
     def __init__(self):

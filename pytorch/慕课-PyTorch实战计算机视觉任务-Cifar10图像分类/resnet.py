@@ -1,6 +1,8 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
+net_name = 'resnet'
+
 
 class ResBlock(nn.Module):
     def __init__(self, in_channel, out_channel, stride=1):
