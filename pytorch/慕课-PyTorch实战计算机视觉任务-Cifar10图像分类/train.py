@@ -3,6 +3,7 @@ import torch.nn as nn
 import torchvision
 from vggnet import VGGNet
 # from resnet import resNet
+# from mobilenetv1 import mobilenet
 from load_cifar10 import train_data_loader, test_data_loader
 import os
 from torch.utils.tensorboard import SummaryWriter
@@ -15,6 +16,7 @@ lr = 0.01
 batch_size = 128
 
 # net = resNet().to(device)
+# net = mobilenet().to(device)
 net = VGGNet().to(device)
 
 # loss
