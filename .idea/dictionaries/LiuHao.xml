@@ -3,9 +3,11 @@
     <words>
       <w>batchsize</w>
       <w>cifar</w>
+      <w>cnts</w>
       <w>gbase</w>
       <w>histc</w>
       <w>imgs</w>
+      <w>ksize</w>
       <w>mobilenetv</w>
       <w>molule</w>
       <w>movidius</w>
