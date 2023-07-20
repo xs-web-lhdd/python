@@ -4,8 +4,10 @@
       <w>batchsize</w>
       <w>cifar</w>
       <w>cnts</w>
+      <w>convole</w>
       <w>gbase</w>
       <w>histc</w>
+      <w>idxs</w>
       <w>imgs</w>
       <w>ksize</w>
       <w>mobilenetv</w>
