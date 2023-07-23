@@ -15,6 +15,7 @@
       <w>movidius</w>
       <w>pred</w>
       <w>randn</w>
+      <w>rcnn</w>
       <w>vggnet</w>
     </words>
   </dictionary>
